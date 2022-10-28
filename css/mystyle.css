@@ -1,0 +1,448 @@
+body {
+    margin: 0;
+    font-family: "Times New Roman", Times, serif;
+    overflow-y: scroll;
+}
+
+
+/*top navigation bar*/
+
+.navbar {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f3f3f3;
+    position: sticky;
+}
+
+.navbar a {
+    display: block;
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover:not(.active) {
+    background-color: #008bba73;
+}
+
+.navbar a.active {
+    background-color: #008cba;
+}
+
+.navbar .icon {
+    display: none;
+}
+
+
+/* adding media query to convert navigation menu to hamburger menu*/
+
+@media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {
+        display: none;
+    }
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar.responsive {
+        position: relative;
+    }
+    .navbar.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+
+/*adding slider image */
+
+.bg {
+    background: url(../img/slider.jpg) no-repeat center center fixed;
+    min-height: 680px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+/*box that ontains the text*/
+
+.bgbox {
+    padding-top: 20%;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    animation: fadeIn 3s;
+}
+
+
+/* applying animation to text*/
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* styling the text of slider image*/
+
+.bg-text {
+    font-size: 60px;
+    text-decoration: solid;
+    margin: auto;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+/* descriptive text */
+
+.description {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    padding: 25px;
+    font-size: 20px;
+    text-decoration: solid;
+    margin: auto;
+    background-color: #f3f3f3;
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+/* flexing row */
+
+.row {
+    display: flex;
+}
+
+
+/* dividing columns into halves */
+
+.column {
+    flex: 50%;
+}
+
+
+/* introductory image */
+
+.startimage {
+    background-image: url(../img/freezefoodstart.png);
+    margin: 25px;
+    min-height: 500px;
+}
+
+
+/* introductory text */
+
+.discoverytext {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    padding: 5px;
+    text-decoration: solid;
+    margin: auto;
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+    animation: fadeIn 3s;
+    animation-delay: 3s;
+}
+
+
+/* Food freezing advantage image */
+
+.advantageimage {
+    background-image: url(../img/advimg.jpg);
+    margin: 25px;
+    min-height: 500px;
+}
+
+
+/* Food freezing advantage text */
+
+.advantagetext {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    padding: 5px;
+    text-decoration: solid;
+    margin: auto;
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+    animation: fadeIn 3s;
+    animation-delay: 6s;
+}
+
+
+/* Youtube video */
+
+.youtubevideo {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+
+/* Footer styling */
+
+.footer {
+    background-color: #008cba;
+    min-height: 400px;
+}
+
+
+/* Footer Logo */
+
+.brandlogo {
+    display: block;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../img/brandlogo.jpg);
+    height: 300px;
+    width: 300px;
+}
+
+
+/* Footer Content */
+
+.content {
+    text-align: center;
+    margin: auto;
+}
+
+.morelinks {
+    text-align: center;
+    margin: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+li a {
+    font-size: large;
+    color: black;
+    text-decoration: none;
+}
+
+
+/* Index page styling ends here */
+
+
+/* Product page styling starts*/
+
+
+/* Page title  */
+
+.producttext {
+    font-family: "Times New Roman", Times, serif;
+    animation: fadeIn 3s;
+    text-align: center;
+}
+
+.titleline {
+    text-align: center;
+    background-color: #f3f3f3;
+    line-height: 50px;
+    margin-bottom: 0;
+}
+
+
+/* Product one image */
+
+.productone {
+    background-image: url(../img/product1.png);
+    margin: 25px;
+    min-height: 500px;
+}
+
+
+/* introductory text */
+
+.productonetext {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    padding: 5px;
+    text-decoration: solid;
+    margin: auto;
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+    animation: fadeIn 3s;
+    animation-delay: 3s;
+}
+
+.firstproductrow {
+    background-color: #f3f3f3;
+}
+
+
+/* Birdseye in pic text */
+
+.birdseyepic {
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+
+/* Quote byChallouma text */
+
+.quotetext {
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+.titletwoline {
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 0;
+}
+
+
+/* Product two image */
+
+.producttwo {
+    background-image: url(../img/product2.jpg);
+    margin: 25px;
+    min-height: 500px;
+}
+
+
+/* Product two text */
+
+.producttwotext {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    padding: 5px;
+    text-decoration: solid;
+    margin: auto;
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+    animation: fadeIn 3s;
+    animation-delay: 6s;
+}
+
+
+/* Buy line information  */
+
+.buyinfo {
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 0;
+}
+
+
+/* Product Page styling ends here */
+
+
+/* Contact page styling starts here */
+
+
+/* Text field styling */
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #000000;
+    border-radius: 2px;
+    box-sizing: border-box;
+    margin-top: 4px;
+    margin-bottom: 15px;
+    resize: vertical;
+}
+
+
+/* Style the submit button with a specific background color etc */
+
+input[type="submit"] {
+    background-color: #000080;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+/* When moving the mouse over the submit button, add a skyblue color */
+
+input[type="submit"]:hover {
+    background-color: #87ceeb;
+}
+
+
+/* Add a background color and some padding around the form */
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+
+/* Contact us styling */
+
+.contactbox {
+    text-align: center;
+    line-height: 30px;
+    font-size: large;
+}
+
+
+/* Contact page styling ends here */
+
+
+/* About us page styling starts here */
+
+
+/* About us description */
+
+.aboutdescription {
+    text-align: center;
+    margin: auto;
+    font-size: large;
+    padding: 25px;
+}
+
+
+/* Images styling */
+
+.images {
+    width: 100%;
+}
+
+
+/* Clarence's details */
+
+.aboutclarence {
+    text-align: center;
+    font-size: 22px;
+    margin: auto;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Contact Us | Frozen Food</title>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <div class="navbar" id="navbar">
+        <a href="index.html" onclick="homepage()">Home</a>
+        <a href="product.html" onclick="productpage()">Product</a>
+        <a class="active" href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="hamburgernavbar()">
+            <i class="fa fa-bars"></i>
+        </a>
+
+    </div>
+
+    <!-- Contact Form  -->
+    <div class="container">
+        <form action="action_page.php">
+
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" required>
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" required>
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="Email" required>
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+            </select>
+
+            <label for="provide comments below">Provide comments below</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"
+                required></textarea>
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </div>
+
+    <!-- Contact company details -->
+    <div class="w3-col m8 w3-panel">
+        <div class="w3-large w3-margin-bottom contactbox">
+            <p> Contact us on:</p>
+            <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Canada<br>
+            <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: 1-800-461-4556<br>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer row">
+                <div class="column ">
+                    <div class="brandlogo"></div>
+                </div>
+                <div class="column content">
+                    <h2>Contact us on</h2>
+                    <div id="shareicons">
+                        <a
+                            href="https://accounts.google.com/signin/v2/identifier?service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin">
+                            <img src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" />
+                        </a>
+                        <a href="https://www.facebook.com/login/" target="_blank">
+                            <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+                        </a>
+                        <a href="https://in.linkedin.com/" target="_blank">
+                            <img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" />
+                        </a>
+                        <a href="https://twitter.com/login?lang=en" target="_blank">
+                            <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
+                        </a>
+                    </div>
+                    <address>
+                        <br>
+
+                        <h3> Reach out to us on</h3>
+                        <p>
+                            Birdseye Company Ltd
+                            <br>
+                            Industrial Area, MIDC Sector
+                            <br>
+                            United States.
+                        </p>
+                    </address>
+
+                    <h4>
+                        All rights reserved @Birdseye Industries
+                    </h4>
+                </div>
+                <div class="column morelinks">
+                    <h3>Explore more about us on</h3>
+                    <ul>
+                        <li> <a href="index.html"> Home </a> </li>
+                        <li> <a href="product.html"> Product </a> </li>
+                        <li> <a href="about.html"> About </a> </li>
+                        <li> <a href="contact.html"> Contact US </a> </li>
+                    </ul>
+                </div>
+
+            </div>
+        </footer>
+
+        <script src="js/myscript.js"></script>
+</body>
+
+</html>
